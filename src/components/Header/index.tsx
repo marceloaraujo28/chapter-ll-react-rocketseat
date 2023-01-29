@@ -13,7 +13,7 @@ export function Header() {
           <Timer size={24} />
         </NavLink>
         <NavLink to="/history" title="Histórico">
-          <Scroll size={24} />00
+          <Scroll size={24} />
         </NavLink>
       </nav>
     </HeaderContainer>
