@@ -1,6 +1,6 @@
 import { differenceInSeconds } from "date-fns";
 import { useContext, useEffect, useState } from "react";
-import { CyclesContex } from "../..";
+import { CyclesContex } from "../../../../contexts/CyclesContext";
 import { CountdownContainer, Separator } from "./styles";
 
 export function Countdown() {
@@ -27,6 +27,8 @@ export function Countdown() {
       document.title = `${minutes}:${seconds}`;
     }
   }, [minutes, seconds, activeCycle]);
+
+  console.log(totalSeconds);
 
   useEffect(() => {
     let interval: number;
